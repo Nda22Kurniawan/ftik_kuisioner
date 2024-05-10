@@ -8,6 +8,7 @@ import {
   CDropdownMenu,
   CDropdownToggle,
   CHeader,
+  CBadge,
   CHeaderNav,
   CHeaderToggler,
   CNavLink,
@@ -51,7 +52,7 @@ const AppHeader = () => {
         >
           <CIcon icon={cilMenu} size="lg" />
         </CHeaderToggler>
-        <CHeaderNav className="d-none d-md-flex">
+        {/* <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
             <CNavLink to="/dashboard" as={NavLink}>
               Dashboard
@@ -63,21 +64,27 @@ const AppHeader = () => {
           <CNavItem>
             <CNavLink href="#">Settings</CNavLink>
           </CNavItem>
-        </CHeaderNav>
+        </CHeaderNav> */}
         <CHeaderNav className="ms-auto">
           <CNavItem>
             <CNavLink href="#">
-              <CIcon icon={cilBell} size="lg" />
+            <CIcon icon={cilBell} size="lg" />
+          <CBadge color="info" className="ms-2">
+            42
+          </CBadge>
             </CNavLink>
           </CNavItem>
-          <CNavItem>
+          {/* <CNavItem>
             <CNavLink href="#">
               <CIcon icon={cilList} size="lg" />
             </CNavLink>
-          </CNavItem>
+          </CNavItem> */}
           <CNavItem>
             <CNavLink href="#">
-              <CIcon icon={cilEnvelopeOpen} size="lg" />
+            <CIcon icon={cilEnvelopeOpen} size='lg' />
+            <CBadge color="success" className="ms-2">
+            42
+          </CBadge>
             </CNavLink>
           </CNavItem>
         </CHeaderNav>

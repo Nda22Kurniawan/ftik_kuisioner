@@ -1,35 +1,33 @@
-import React, { useHistory } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import {
-  CButton,
-  CCard,
-  CCardBody,
-  CCardHeader,
-  CCol,
-  CDropdown,
-  CDropdownDivider,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CFormCheck,
-  CFormInput,
-  CFormLabel,
-  CFormSelect,
-  CFormTextarea,
-  CInputGroup,
-  CInputGroupText,
-  CRow,
+    CButton,
+    CCard,
+    CCardBody,
+    CCardHeader,
+    CCol,
+    CDropdown,
+    CDropdownDivider,
+    CDropdownItem,
+    CDropdownMenu,
+    CDropdownToggle,
+    CFormCheck,
+    CFormInput,
+    CFormLabel,
+    CFormSelect,
+    CFormTextarea,
+    CInputGroup,
+    CInputGroupText,
+    CRow,
 } from '@coreui/react'
-import { DocsExample } from 'src/components'
 
-const InputGroup = () => {
-
-  return (
-    <CRow>
-      <CCol xs={12}>
-      <CCard className="mb-4">
+const kuisionerReguler = () => {
+    return (
+        <CRow>
+            <CCol xs={12}>
+                <CCard className="mb-4">
                     <CCardHeader>
-                        <strong>Kuisioner Semester Ganjil / Genap</strong>
+                        <strong>Kuisioner</strong>
                     </CCardHeader>
                     <CCardBody >
                         <CCardBody>
@@ -89,9 +87,9 @@ const InputGroup = () => {
                         <CButton color="success">Next</CButton>
                     </Link>
                 </div>
-      </CCol>
-    </CRow>
-  )
+            </CCol>
+        </CRow>
+    )
 }
 
-export default InputGroup
+export default kuisionerReguler

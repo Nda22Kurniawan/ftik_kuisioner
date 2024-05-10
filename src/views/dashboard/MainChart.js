@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { CCallout, CButton } from '@coreui/react'
 
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle } from '@coreui/utils'
@@ -30,7 +31,27 @@ const MainChart = () => {
 
   return (
     <>
-      <CChartLine
+      <CCallout color="warning" className='d-flex justify-content-between bg-light'>
+        <CButton>
+          Kuisioner Semester Genap.
+        </CButton>
+        <div className='text-right' style={{color: 'green'}}>Now</div>
+      </CCallout>
+      <CCallout color="warning" className='d-flex justify-content-between bg-light'>
+        <CButton>
+          Kuisioner Semester Genap.
+        </CButton>
+        <div className='text-right' style={{color: '#FFC200'}}>Upcoming</div>
+      </CCallout>
+      <CCallout color="warning" className='d-flex justify-content-between bg-light'>
+        <CButton >
+          Kuisioner Semester Genap.
+        </CButton>
+        <div className='text-right' style={{color: 'red'}}>Missed</div>
+      </CCallout>
+
+
+      {/* <CChartLine
         ref={chartRef}
         style={{ height: '300px', marginTop: '40px' }}
         data={{
@@ -125,7 +146,7 @@ const MainChart = () => {
             },
           },
         }}
-      />
+      /> */}
     </>
   )
 }
